@@ -3,6 +3,9 @@ pipeline{
     tools{
         nodejs 'Node Js'
     }
+    options{
+        timeout(time: 300, unit: 'SECONDS')
+    }
 
     stages{
         stage('Instal·lant dependències'){
